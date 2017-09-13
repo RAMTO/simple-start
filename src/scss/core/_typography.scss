@@ -1,0 +1,108 @@
+@mixin text-base($color: $color-dark, $font-family: $font-family-normal) {
+    color: $color;
+    font-family: $font-family;
+
+    &.is-inverted,
+    .is-inverted {
+        color: $color-white;
+    }
+
+    &.is-bold,
+    .is-bold {
+        font-weight: 700;
+    }
+
+    &.is-primary,
+    .is-primary {
+        color: $color-secondary;
+    }
+
+    &.is-secondary,
+    .is-secondary {
+        color: $color-secondary;
+    }
+
+    &.is-success,
+    .is-success {
+        color: $color-success;
+    }
+
+    &.is-error,
+    .is-error {
+        color: $color-error;
+    }
+
+    &.is-upper,
+    .is-upper {
+        text-transform: uppercase;
+    }
+
+    &.is-center,
+    .is-center {
+        text-align: center;
+    }
+}
+
+@mixin text-size($font-size, $line-height: 1.5) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.text-mega {
+    @include text-base;
+    @include text-size($font-size-mega-device, 1.4);
+
+    @media (min-width: $breakpoint_device) {
+        @include text-size($font-size-mega, 1.3);
+    }  
+}
+
+.text-header {
+    @include text-base;
+    @include text-size($font-size-header-device, 1.4);
+
+    @media (min-width: $breakpoint_device) {
+        @include text-size($font-size-header, 1.3);
+
+        &.is-headline {
+            @include text-size($font-size-headliine, 1.3);
+        }
+    }  
+}
+
+.text-title {
+    @include text-base;
+    @include text-size($font-size-title-device, 1.4);
+
+    @media (min-width: $breakpoint_device) {
+        @include text-size($font-size-title, 1.3);
+
+        &.is-headline {
+            @include text-size($font-size-headline, 1.3);
+        }
+    }  
+}
+
+.text-body {
+    @include text-base;
+    @include text-size($font-size-body-device);
+
+    @media (min-width: $breakpoint_device) {
+        @include text-size($font-size-body);
+
+        &.is-lead,
+        .is-lead {
+            @include text-size($font-size-lead, 1.6);
+        }
+
+        &.is-caption,
+        .is-caption {
+            @include text-size($font-size-caption, 1.4);
+        }
+
+        &.is-micro,
+        .is-micro {
+            @include text-size($font-size-micro, 1.3);
+        }
+    }  
+}

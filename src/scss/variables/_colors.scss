@@ -1,0 +1,18 @@
+$color-primary:             #0270f9;
+$color-primary-hover:       mix(black, $color-primary, 10%);
+$color-primary-active:      mix(black, $color-primary, 20%);
+
+$color-secondary:           #00a1ef;
+$color-secondary-hover:     mix(black, $color-secondary, 10%);
+$color-secondary-active:    mix(black, $color-secondary, 20%);
+
+$color-success:             #00aa6e;
+$color-error:               #e24358;
+$color-info:                #ffb75d;
+$color-warning:             #ffb75d;
+
+$color-black:               #000000;
+$color-dark:                #5b6573;
+$color-gray:                #9ba3af;
+$color-light:               #f5f7fa;
+$color-white:               #ffffff;

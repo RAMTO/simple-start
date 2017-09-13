@@ -1,0 +1,34 @@
+{
+  "name": "atomus-starter",
+  "version": "1.0.0",
+  "description": "Atomus Starter Kit",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass-chokidar src/scss/ -o dist/css/",
+    "start": "npm run build && node-sass-chokidar src/scss/ -o dist/css/ --watch --recursive"
+  },
+  "author": "Martin Dobrev",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "3.0.4",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-codekit": "1.2.0",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mustache-render": "1.9.2",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "node-sass-chokidar": "0.0.3"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Atomus-app/atomus-starter.git"
+  },
+  "keywords": [
+    "atomus",
+    "starter"
+  ],
+  "homepage": "http://atomus.io"
+}

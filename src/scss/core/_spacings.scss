@@ -1,0 +1,135 @@
+/*
+ * Margins
+ */
+
+
+/*
+ * Paddings
+ */
+
+
+/*
+ * Typography & Sections Spacings
+ */
+.is-marged-bottom {
+    margin-bottom: 24px;
+
+    &.is-before-text {
+        margin-bottom: 16px;
+    }
+
+    @media (min-width: $breakpoint_device) {
+        margin-bottom: 48px;
+
+        &.is-display-before-text {
+            margin-bottom: 32px;
+        }
+
+        &.is-headline-before-text {
+            margin-bottom: 24px;
+        }
+
+        &.is-title-before-text {
+            margin-bottom: 16px;
+        }
+
+        &.is-subheader-before-text {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.is-padded-top {
+    padding-top: 40px !important;
+
+    &.is-small {
+        padding-top: 24px !important;
+    }
+
+    &.in-help-center {
+        padding-top: 0 !important; 
+    }
+
+    @media (max-width: $breakpoint_phone - 1) {
+        &.desktop-only {
+            padding-top: 0 !important;
+        }
+    }
+
+    @media (min-width: $breakpoint_phone) {
+        &.in-help-center {
+            padding-top: 56px !important; 
+        }
+    }
+
+    @media (min-width: $breakpoint_device) {
+        &,
+        &.is-small {
+            padding-top: 80px !important;
+        }
+
+        &.is-0x {
+            padding-top: 0 !important;
+        }
+
+        &.is-3x {
+            padding-top: 24px !important;
+        }
+
+        &.is-4x {
+            padding-top: 32px !important;
+        }
+
+        &.is-5x {
+            padding-top: 40px !important;
+        }
+
+        &.in-help-center {
+            padding-top: 80px !important; 
+        }
+    }
+}
+
+.is-padded-bottom {
+    padding-bottom: 24px !important;
+
+    &.is-large {
+        padding-bottom: 40px !important;
+    }
+
+    &.to-compensate {
+        margin-bottom: -16px !important;
+    }
+    
+    @media (max-width: $breakpoint_phone - 1) {
+        &.desktop-only {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    @media (min-width: $breakpoint_phone) {
+        &.is-20x {
+            padding-bottom: 160px !important;
+        }
+    }
+
+    @media (min-width: $breakpoint_device) {
+        padding-bottom: 80px !important;
+
+        &.to-compensate {
+            margin-bottom: -24px !important;
+        }
+
+        &.is-0x {
+            padding-bottom: 0 !important;
+        }
+
+        &.is-3x {
+            padding-bottom: 24px !important;
+        }
+
+        &.is-5x {
+            padding-bottom: 40px !important;
+        }
+    }
+}
