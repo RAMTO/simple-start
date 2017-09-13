@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass-chokidar src/scss/ -o dist/css/",
+    "dev": "grunt build && grunt",
     "start": "npm run build && node-sass-chokidar src/scss/ -o dist/css/ --watch --recursive"
   },
   "author": "Martin Dobrev",

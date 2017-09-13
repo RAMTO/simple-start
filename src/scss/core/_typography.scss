@@ -65,7 +65,7 @@
         @include text-size($font-size-header, 1.3);
 
         &.is-headline {
-            @include text-size($font-size-headliine, 1.3);
+            @include text-size($font-size-headline, 1.3);
         }
     }  
 }
@@ -84,12 +84,10 @@
 }
 
 .text-body {
-    @include text-base;
-    @include text-size($font-size-body-device);
+    @include text-base($color-black);
+    @include text-size($font-size-body);
 
     @media (min-width: $breakpoint_device) {
-        @include text-size($font-size-body);
-
         &.is-lead,
         .is-lead {
             @include text-size($font-size-lead, 1.6);

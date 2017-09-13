@@ -84,6 +84,6 @@ module.exports = function(grunt) {
     });
     
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('build', ['codekit', 'copy', 'sass', 'autoprefixer']);
+    grunt.registerTask('build', ['codekit', 'sass', 'autoprefixer']);
     grunt.registerTask('default', ['browserSync', 'watch']);
 }
