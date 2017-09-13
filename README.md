@@ -1,4 +1,4 @@
 # simple-start
 Easy and fast project start
 
-Just clone run `npm start` and enjoy!
+Just clone and run `npm start` and enjoy!
