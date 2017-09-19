@@ -50,10 +50,10 @@
 
 .text-mega {
     @include text-base;
-    @include text-size($font-size-mega-device, 1.4);
+    @include text-size($font-size-mega-device, 1.2);
 
     @media (min-width: $breakpoint_device) {
-        @include text-size($font-size-mega, 1.3);
+        @include text-size($font-size-mega, 1.2);
     }  
 }
 

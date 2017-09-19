@@ -19,6 +19,19 @@ module.exports = function(grunt) {
             }
         },
 
+        mustache_html: {
+            development: {
+                options: {
+                    src: 'src/templates',
+                    dist: 'dist',
+                    type: 'mustache'
+                },
+                globals: {
+                    analytics_id: 'UA-123456-1'
+                }
+            }
+        },
+
         copy: {
             images: {
                 expand: true,
@@ -78,12 +91,16 @@ module.exports = function(grunt) {
             kit: {
                 files: '**/*.kit',
                 tasks: ['codekit']
+            },
+            mustache: {
+                files: 'src/**/*.mustache',
+                tasks: ['mustache_html']
             }
         }
 
     });
     
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('build', ['codekit', 'sass', 'autoprefixer']);
+    grunt.registerTask('build', ['mustache_html', 'sass', 'autoprefixer']);
     grunt.registerTask('default', ['browserSync', 'watch']);
 }

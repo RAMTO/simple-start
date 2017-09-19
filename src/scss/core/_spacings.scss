@@ -12,16 +12,20 @@
  * Typography & Sections Spacings
  */
 .is-marged-bottom {
-    margin-bottom: 24px;
+    margin-bottom: $spacing_unit * 1px;
 
     &.is-before-text {
-        margin-bottom: 16px;
+        margin-bottom: $spacing_unit * 2px;
     }
 
     @media (min-width: $breakpoint_device) {
         margin-bottom: 48px;
 
-        &.is-display-before-text {
+        &.is-between-sections {
+            margin-bottom: 80px;
+        }
+
+        &.is-before-text {
             margin-bottom: 32px;
         }
 
@@ -40,96 +44,96 @@
 }
 
 .is-padded-top {
-    padding-top: 40px !important;
+    padding-top: 40px;
 
     &.is-small {
-        padding-top: 24px !important;
+        padding-top: 24px;
     }
 
     &.in-help-center {
-        padding-top: 0 !important; 
+        padding-top: 0; 
     }
 
     @media (max-width: $breakpoint_phone - 1) {
         &.desktop-only {
-            padding-top: 0 !important;
+            padding-top: 0;
         }
     }
 
     @media (min-width: $breakpoint_phone) {
         &.in-help-center {
-            padding-top: 56px !important; 
+            padding-top: 56px; 
         }
     }
 
     @media (min-width: $breakpoint_device) {
         &,
         &.is-small {
-            padding-top: 80px !important;
+            padding-top: 80px;
         }
 
         &.is-0x {
-            padding-top: 0 !important;
+            padding-top: 0;
         }
 
         &.is-3x {
-            padding-top: 24px !important;
+            padding-top: 24px;
         }
 
         &.is-4x {
-            padding-top: 32px !important;
+            padding-top: 32px;
         }
 
         &.is-5x {
-            padding-top: 40px !important;
+            padding-top: 40px;
         }
 
         &.in-help-center {
-            padding-top: 80px !important; 
+            padding-top: 80px; 
         }
     }
 }
 
 .is-padded-bottom {
-    padding-bottom: 24px !important;
+    padding-bottom: 24px;
 
     &.is-large {
-        padding-bottom: 40px !important;
+        padding-bottom: 40px;
     }
 
     &.to-compensate {
-        margin-bottom: -16px !important;
+        margin-bottom: -16px;
     }
     
     @media (max-width: $breakpoint_phone - 1) {
         &.desktop-only {
-            padding-bottom: 0 !important;
+            padding-bottom: 0;
         }
     }
 
     @media (min-width: $breakpoint_phone) {
         &.is-20x {
-            padding-bottom: 160px !important;
+            padding-bottom: 160px;
         }
     }
 
     @media (min-width: $breakpoint_device) {
-        padding-bottom: 80px !important;
+        padding-bottom: 80px;
 
         &.to-compensate {
-            margin-bottom: -24px !important;
+            margin-bottom: -24px;
         }
 
         &.is-0x {
-            padding-bottom: 0 !important;
+            padding-bottom: 0;
         }
 
         &.is-3x {
-            padding-bottom: 24px !important;
+            padding-bottom: 24px;
         }
 
         &.is-5x {
-            padding-bottom: 40px !important;
+            padding-bottom: 40px;
         }
     }
 }

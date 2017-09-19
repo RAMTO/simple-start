@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass-chokidar src/scss/ -o dist/css/",
-    "dev": "grunt build && grunt",
-    "start": "npm run build && node-sass-chokidar src/scss/ -o dist/css/ --watch --recursive"
+    "dev": "npm run build && node-sass-chokidar src/scss/ -o dist/css/ --watch --recursive",
+    "start": "grunt build && grunt"
   },
   "author": "Martin Dobrev",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "grunt-codekit": "1.2.0",
     "grunt-contrib-copy": "1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-mustache-html": "^0.1.9",
     "grunt-mustache-render": "1.9.2",
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
