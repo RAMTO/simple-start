@@ -1,0 +1,31 @@
+/**
+ * FLEX GRID
+ */
+
+.flex-col-half,
+.flex-col-third {
+    margin-bottom: $spacing-unit * 3px;
+}
+
+ @media (min-width: $breakpoint-phone) {
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .flex-col-half,
+    .flex-col-third {
+        margin-bottom: 0;
+    }
+
+    .flex-col-half {
+        flex: 0 1 48%;
+        max-width: 48%;
+    }
+
+    .flex-col-third {
+        flex: 0 1 31%;
+        max-width: 31%;
+    }
+}

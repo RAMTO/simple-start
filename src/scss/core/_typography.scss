@@ -41,9 +41,11 @@
         text-transform: uppercase;
     }
 
-    &.is-center,
-    .is-center {
-        text-align: center;
+    @media (min-width: $breakpoint-phone) {
+        &.is-center,
+        .is-center {
+            text-align: center;
+        }
     }
 }
 
