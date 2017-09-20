@@ -1,3 +1,7 @@
+/**
+ * TYPOGRAPHY CLASSES
+ */
+
 @mixin text-base($color: $color-dark, $font-family: $font-family-normal) {
     color: $color;
     font-family: $font-family;
