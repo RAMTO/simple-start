@@ -2,7 +2,7 @@
  * TYPOGRAPHY CLASSES
  */
 
-@mixin text-base($color: $color-dark, $font-family: $font-family-normal) {
+@mixin text-base($color: $color-dark, $font-family: $font-family-header) {
     color: $color;
     font-family: $font-family;
 
@@ -88,7 +88,7 @@
 }
 
 .text-body {
-    @include text-base($color-black);
+    @include text-base($color-black, $font-family-text);
     @include text-size($font-size-body);
 
     @media (min-width: $breakpoint-device) {

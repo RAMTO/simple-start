@@ -51,6 +51,10 @@
 .is-marged-bottom {
     margin-bottom: $spacing-unit * 1px;
 
+    &.is-between-sections {
+        margin-bottom: $spacing-unit * 3px;
+    }
+
     @media (min-width: $breakpoint-device) {
         margin-bottom: 48px;
 
