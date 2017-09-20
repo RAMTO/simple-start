@@ -1,16 +1,78 @@
 /*
  * SPACINGS CLASSES
+ * 
+ * Fliud helper classes for margins and paddings
  */
+ 
+@for $i from 0 through 5 {
+    .has-mt-#{$i * $spacing-unit} { margin-top: $spacing-unit * $i * 1px; }
+    .has-mr-#{$i * $spacing-unit} { margin-right: $spacing-unit * $i * 1px; }
+    .has-mb-#{$i * $spacing-unit} { margin-bottom: $spacing-unit * $i * 1px; }
+    .has-ml-#{$i * $spacing-unit} { margin-left: $spacing-unit * $i * 1px; }
+    
+    .has-pt-#{$i * $spacing-unit} { padding-top: $spacing-unit * $i * 1px; }
+    .has-pr-#{$i * $spacing-unit} { padding-right: $spacing-unit * $i * 1px; }
+    .has-pb-#{$i * $spacing-unit} { padding-bottom: $spacing-unit * $i * 1px; }
+    .has-pl-#{$i * $spacing-unit} { padding-left: $spacing-unit * $i * 1px; }
+  }
 
-.is-marged-bottom {
-    margin-bottom: $spacing_unit * 1px;
+.is-marged-top {
+    margin-top: $spacing-unit * 1px;
 
-    &.is-before-text {
-        margin-bottom: $spacing_unit * 2px;
+    &.is-x2-device {
+        margin-top: $spacing-unit * 2px;
     }
 
-    @media (min-width: $breakpoint_device) {
+    &.is-x3-device {
+        margin-top: $spacing-unit * 3px;
+    }
+
+    @media (min-width: $breakpoint-device) {
+        margin-top: $spacing-unit * 3px;
+
+        &.is-x2 {
+            margin-top: $spacing-unit * 2px;
+        }
+    
+        &.is-x4 {
+            margin-top: $spacing-unit * 4px;
+        }
+    }
+
+    /*
+     * An additional query for a smaller devices
+
+    @media (min-width: $breakpoint-phone) {
+        margin-top: $spacing-unit * 3px;
+    }
+    */
+}
+
+.is-marged-bottom {
+    margin-bottom: $spacing-unit * 1px;
+
+    @media (min-width: $breakpoint-device) {
         margin-bottom: 48px;
+
+        &.is-x2 {
+            margin-bottom: $spacing-unit * 2px;
+        }
+    
+        &.is-x3 {
+            margin-bottom: $spacing-unit * 3px;
+        }
+    
+        &.is-x4 {
+            margin-bottom: $spacing-unit * 4px;
+        }
+    
+        &.is-x5 {
+            margin-bottom: $spacing-unit * 5px;
+        }
+    
+        &.is-before-text {
+            margin-bottom: $spacing-unit * 2px;
+        }
 
         &.is-between-sections {
             margin-bottom: 80px;
@@ -57,7 +119,7 @@
         }
     }
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         &,
         &.is-small {
             padding-top: 80px;
@@ -108,7 +170,7 @@
         }
     }
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         padding-bottom: 80px;
 
         &.to-compensate {

@@ -56,7 +56,7 @@
     @include text-base;
     @include text-size($font-size-mega-device, 1.2);
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         @include text-size($font-size-mega, 1.2);
     }  
 }
@@ -65,7 +65,7 @@
     @include text-base;
     @include text-size($font-size-header-device, 1.4);
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         @include text-size($font-size-header, 1.3);
 
         &.is-headline {
@@ -78,7 +78,7 @@
     @include text-base;
     @include text-size($font-size-title-device, 1.4);
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         @include text-size($font-size-title, 1.3);
 
         &.is-headline {
@@ -91,7 +91,7 @@
     @include text-base($color-black);
     @include text-size($font-size-body);
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         &.is-lead,
         .is-lead {
             @include text-size($font-size-lead, 1.6);

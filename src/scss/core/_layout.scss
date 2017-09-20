@@ -15,7 +15,7 @@
     @include container-center;
      max-width: 90%;
 
-    @media (min-width: $breakpoint_device) {
+    @media (min-width: $breakpoint-device) {
         max-width: 960px;
     }
 }
